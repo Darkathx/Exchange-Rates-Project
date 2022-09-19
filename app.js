@@ -14,11 +14,9 @@ eventListeners();
 function eventListeners() {
     firstSelect.addEventListener("change", () => {
         ui.updateTitle();
-        exc.updateCurrencies(firstSelect.value, secondSelect.value);
     });
     secondSelect.addEventListener("change", () => {
         ui.updateTitle();
-        exc.updateCurrencies(firstSelect.value, secondSelect.value);
     });
     amount.addEventListener("input", calculator);
 }
